@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>交互设计作业1</title>
+    <link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+	<script src="materialize/js/jquery-2.1.1.min.js"></script>
+	<script src="materialize/js/materialize.min.js"></script>
+		<div class="row">
+			<div class="col s12 ">
+				<nav class="cyan">
+				    <div class="nav-wrapper">
+				    <a href="#" class="brand-logo">时间系统的三大模型</a>
+				    </div>
+				</nav>
+				<ul class="collapsible" data-collapsible="accordion">
+			    	<li>
+				      <div class="collapsible-header active cyan-text">实现模型——时间数据</div>
+				      <div class="collapsible-body">
+				      	<p>对于计算机来说时间只是一段数字形式的数据，让用户直接输入时间数字表达了时间的实现机制</p>
+				      	  <div class="row">
+						    <form class="col s12">
+						      <div class="row">
+						        <div class="input-field col s6">
+						          <input id="first_name" type="text" class="validate">
+						          <label for="first_name">月份</label>
+						        </div>
+						        <div class="input-field col s6">
+						          <input id="last_name" type="text" class="validate">
+						          <label for="last_name">日期</label>
+						        </div>
+						        <div class="input-field col s6">
+						          <input id="first_name" type="text" class="validate">
+						          <label for="first_name">小时</label>
+						        </div>
+						        <div class="input-field col s6">
+						          <input id="last_name" type="text" class="validate">
+						          <label for="last_name">分钟</label>
+						        </div>
+						       </div>
+						     </form>
+						    </div>
+						    <p>但这种交互不符合用户对时间的心理模型、不便于操作，并容易发生输入格式不符的错误。</p>
+				      </div>
+			    	</li>
+				    <li>
+				      <div class="collapsible-header cyan-text">心理模型——日历与时钟</div>
+				      <div class="collapsible-body">
+				      	   <div class="row">
+						     <div class="col s6 l4 offset-l2">
+						       <div class="card">
+						         <div class="card-image">
+						           <img src="images/1.jpg">
+						         </div>
+						         <div class="card-content">
+						           长期以来人们是通过时钟与手表来获取时间，对于时间的心理认知主要是表盘上的时针分针，因此表盘是用户对于时间的心理模型。
+						         </div>
+						       </div>
+						     </div>
+						     <div class="col s6 l4">
+						       <div class="card">
+						         <div class="card-image">
+						           <img src="images/2.jpg">
+						         </div>
+						         <div class="card-content">
+						           长期以来人们是通过日历来获取日期，对于日期的心理认知主要是日历方格上的方格，因此日历是用户对于日期的心理模型。
+						         </div>
+						       </div>
+						     </div>
+						   </div>
+				      </div>
+				    </li>
+				    <li>
+				      <div class="collapsible-header cyan-text">表现模型——设计方案</div>
+				      <div class="collapsible-body">
+				      	   <ul class="collection">
+						     <li class="collection-item avatar">
+						       <i class="material-icons circle cyan">timer</i>
+						       <div id="app"></div>
+						     </li>
+						     <li class="collection-item avatar">
+						       <i class="material-icons circle cyan">receipt</i>
+						       <div id="app2"></div>
+						     </li>
+						    </ul>
+				      </div>
+				    </li>
+			  </ul>
+			</div>
+		</div>
+</body>
+<script src="react.js"></script>
+</html>
